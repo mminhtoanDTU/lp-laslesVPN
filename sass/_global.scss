@@ -1,0 +1,124 @@
+body {
+    font-family: $font;
+    font-size: 16px;
+    color: $text-gray;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-family: $font;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: $text-color;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+.container {
+    max-width: 1155px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.button {
+    display: inline-block;
+    border: none;
+    outline: none;
+    padding: 13px 45px;
+    line-height: 1;
+    font-weight: 700;
+    border-radius: 100rem;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+
+    &-primary {
+        background-color: $primary-color;
+        color: $white-color;
+
+        &.square {
+            padding: 17px 77px;
+            border-radius: 10px;
+        }
+
+        &.blur {
+            box-shadow: 0 30px 54px -5px rgba(245, 56, 56, 0.35);
+        }
+    }
+
+    &-outline {
+        background-color: $white-color;
+        color: $primary-color;
+        border: 1px solid;
+        transition: all .2s ease-in;
+
+        &:hover {
+            background-color: $primary-color;
+            color: $white-color;
+        }
+    }
+}
+
+.heading-title {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: calc(50 / 35);
+}
+
+.heading-small {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: calc(30 / 18);
+}
+
+.boxed {
+    max-width: 555px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.text {
+    line-height: calc(30 / 16);
+
+    & strong {
+        font-weight: 500;
+    }
+
+    &-md {
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .button {
+
+        &-primary {
+            &.square {
+                padding: 17px 60px;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .button {
+        padding: 13px 26px;
+    }
+
+    .heading-title {
+        font-size: 30px;
+    }
+}

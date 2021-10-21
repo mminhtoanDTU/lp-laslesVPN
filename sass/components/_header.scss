@@ -1,0 +1,61 @@
+.header {
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 0 90px;
+    }
+
+    &-auth {
+        display: flex;
+        align-items: center;
+        gap: 0 30px;
+    }
+
+    &-signin {
+        font-weight: 500;
+        color: $text-color;
+        transition: color .15s linear;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    &-signup {
+        padding: 13px 45px;
+        color: $primary-color;
+        border-radius: 100rem;
+        border: 1px solid;
+    }
+
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 0 40px;
+
+    &-link {
+        color: inherit;
+        transition: color .15s linear;
+
+        &:hover {
+            color: $text-color;
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .header {
+
+        &-container {
+            padding: 25px 0 50px;
+        }
+    }
+
+    .menu {
+        display: none;
+    }
+}

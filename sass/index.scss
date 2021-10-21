@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+// Config
+@import 'reset';
+@import 'variable';
+@import 'global';
+
+// Components
+@import './components/header';
+@import './components/hero';
+@import './components/intro';
+@import './components/feature';
+@import './components/plan';
+@import './components/customer';
+@import './components/subscribe';
+@import './components/footer';
