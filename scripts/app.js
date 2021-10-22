@@ -29,3 +29,16 @@ $('.customer-list').slick({
         // instead of a settings object
     ]
 });
+
+const toggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
+
+toggle.addEventListener('click', () => {
+    menu.classList.add('active')
+})
+
+window.addEventListener('click', (e) => {
+    if (!menu.contains(e.target) & !e.target.matches('.menu-toggle')) {
+        menu.classList.remove('active')
+    }
+})
